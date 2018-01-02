@@ -1,0 +1,223 @@
+.footer {
+  background-color: #4f5469; 
+  border: dotted black;
+  text-align: center; /*centers text*/
+  color: white; /*colors text white*/
+  height: 15px; /*height of div*/
+  width: 100%; /*span of div across page*/
+  position: fixed; /*fixes div to the bottom of page when*/
+  bottom: 0%; /*position of div*/
+}
+/*comments above apply to the next 2 footer classes*/
+.footer2 {
+  background-color: #4f5469;
+  border: dotted black;
+  text-align: center;
+  color: white;
+  height: 15px;
+  width: 100%;
+  position: fixed;
+  bottom: 0%;
+}
+
+.footer3 {
+  background-color: #4f5469;
+  border: dotted black;
+  text-align: center;
+  color: white;
+  height: 15px;
+  width: 100%;
+  position: fixed;
+  bottom: 0%;
+}
+
+body {
+  background-color: white;
+  background-image: url("background.jpg") /*url to background image*/
+}
+
+ul {
+  list-style-type: circle; /*creates non-filled circular bullets*/
+}
+
+.table2 {
+  float: right; /*moves table to the right*/
+  width: 650px; 
+  height: 10px;
+}
+
+.table1 {
+  float: left; /*moves table to left*/
+  width: 650px;
+  height: 10px;
+  margin-bottom: 5%; /*space away from bottom*/
+}
+
+th {
+  background-color: #4f5469;
+  color: white;
+}
+
+table,
+th,
+td {
+  border: 3px solid black;
+}
+
+img.middle {
+  display: block; /*displays image as a block element*/
+  margin-left: auto;
+  margin-right: auto;
+  box-shadow: 0px 0px 10px 0px black; /*creates shadow around image*/
+}
+
+.navbar {
+  background-color: #4f5469;
+  overflow: hidden; /*overflow is clipped, rest of content is made invisible*/
+  width: 60%;
+  border: dotted black;
+  display: flex; /*spaces content relative to the navigation bar area*/
+  justify-content: space-around; /*creates space around content*/
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  box-shadow: 0px 0px 10px 0px black;
+}
+
+.navbar a {
+  text-decoration: none; /*removes auto underline*/
+  float: left;
+  color: white;
+  padding: 20px 30px;
+  font-size: 18px;
+}
+
+.dropbtn {
+  color: white;
+  padding: 16px;
+  font-size: 18px;
+  border: none;
+  cursor: pointer; /*makes cursor style pointer*/
+}
+
+.dropmenu {
+  float: left;
+  overflow: hidden; /*overflow is clipped, rest of content is made invisible*/
+}
+
+.dropmenu .dropbtn {
+  border: none;
+  outline: none;
+  color: white;
+  padding: 20px 30px;
+}
+
+.navbar a:hover, 
+.dropmenu:hover .dropbtn {
+  background-color: #000033;
+}
+
+.content {
+  display: none;
+  position: absolute;
+  background-color: white;
+  min-width: 160px;
+  box-shadow: 0px 10px 20px 0px black;
+  z-index: 1000; /*sets the stack order of the content in dropdown menu*/
+}
+
+.content a {
+  color: black;
+  padding: 12px 16px;
+  display: block;
+  text-decoration: none;
+  float: none;
+  text-align: left;
+}
+
+.content a:hover {
+  background-color: lightgrey
+}
+
+.dropmenu:hover .content {
+  display: block;
+}
+
+.linebreak {
+  border: solid black;
+  padding: 0px;
+}
+
+.linebreak2 {
+  border: dashed black 2px;
+  padding: 0px;
+  margin-top: 30px;
+}
+
+.profile {
+  float: left;
+}
+
+p {
+  margin-top: 0px;
+  float: right;
+}
+
+.self {
+  border: 1px solid black;
+  float: left;
+  margin-right: 50px;
+  margin-left: 190px;
+  margin-top: 30px;
+}
+
+.unit1 section img {
+  border: dotted black;
+  margin-top: 40px;
+  margin-right: 40px;
+}
+
+.unit2 section img {
+  border: dotted black;
+  margin-top: 30px;
+  margin-right: 40px
+}
+
+h3 {
+  font-family: arial;
+}
+
+.paragraph, .paragraph h3 {
+  
+  margin-right:90px;
+  display:block;
+}
+
+#last {
+  margin-bottom: 5%;
+}
+
+@media(max-width:700px) { /*creates browser response*/
+  .navbar {
+    width: 90%;
+  }
+  .navbar a {
+    display: block;
+  }
+  .middle img
+    {
+    width: 0%;
+    height: 100%;
+  }
+  .self img {
+    float: left;
+    width: 30%;
+    height: 10%;
+  }
+  .table2 {
+    float: left;
+    margin-bottom: 5%;
+  }
+}
+	
+
